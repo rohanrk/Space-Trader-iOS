@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCA409C92217DDAC00DD2F26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409C82217DDAC00DD2F26 /* AppDelegate.swift */; };
+		BCA409CB2217DDAC00DD2F26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409CA2217DDAC00DD2F26 /* ViewController.swift */; };
+		BCA409CE2217DDAC00DD2F26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA409CC2217DDAC00DD2F26 /* Main.storyboard */; };
+		BCA409D02217DDAC00DD2F26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA409CF2217DDAC00DD2F26 /* Assets.xcassets */; };
+		BCA409D32217DDAC00DD2F26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA409D12217DDAC00DD2F26 /* LaunchScreen.storyboard */; };
+		BCA409DE2217DDAC00DD2F26 /* Space_Trader_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409DD2217DDAC00DD2F26 /* Space_Trader_iOSTests.swift */; };
+		BCA409E92217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409E82217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCA409DA2217DDAC00DD2F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA409BD2217DDAC00DD2F26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCA409C42217DDAC00DD2F26;
+			remoteInfo = "Space-Trader-iOS";
+		};
+		BCA409E52217DDAC00DD2F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA409BD2217DDAC00DD2F26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCA409C42217DDAC00DD2F26;
+			remoteInfo = "Space-Trader-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCA409C52217DDAC00DD2F26 /* Space-Trader-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space-Trader-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA409C82217DDAC00DD2F26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCA409CA2217DDAC00DD2F26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCA409CD2217DDAC00DD2F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCA409CF2217DDAC00DD2F26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCA409D22217DDAC00DD2F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCA409D42217DDAC00DD2F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA409D92217DDAC00DD2F26 /* Space-Trader-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space-Trader-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA409DD2217DDAC00DD2F26 /* Space_Trader_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_Trader_iOSTests.swift; sourceTree = "<group>"; };
+		BCA409DF2217DDAC00DD2F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA409E42217DDAC00DD2F26 /* Space-Trader-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space-Trader-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA409E82217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_Trader_iOSUITests.swift; sourceTree = "<group>"; };
+		BCA409EA2217DDAC00DD2F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCA409C22217DDAC00DD2F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA409D62217DDAC00DD2F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA409E12217DDAC00DD2F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCA409BC2217DDAC00DD2F26 = {
+			isa = PBXGroup;
+			children = (
+				BCA409C72217DDAC00DD2F26 /* Space-Trader-iOS */,
+				BCA409DC2217DDAC00DD2F26 /* Space-Trader-iOSTests */,
+				BCA409E72217DDAC00DD2F26 /* Space-Trader-iOSUITests */,
+				BCA409C62217DDAC00DD2F26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCA409C62217DDAC00DD2F26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCA409C52217DDAC00DD2F26 /* Space-Trader-iOS.app */,
+				BCA409D92217DDAC00DD2F26 /* Space-Trader-iOSTests.xctest */,
+				BCA409E42217DDAC00DD2F26 /* Space-Trader-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCA409C72217DDAC00DD2F26 /* Space-Trader-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BCA409C82217DDAC00DD2F26 /* AppDelegate.swift */,
+				BCA409CA2217DDAC00DD2F26 /* ViewController.swift */,
+				BCA409CC2217DDAC00DD2F26 /* Main.storyboard */,
+				BCA409CF2217DDAC00DD2F26 /* Assets.xcassets */,
+				BCA409D12217DDAC00DD2F26 /* LaunchScreen.storyboard */,
+				BCA409D42217DDAC00DD2F26 /* Info.plist */,
+			);
+			path = "Space-Trader-iOS";
+			sourceTree = "<group>";
+		};
+		BCA409DC2217DDAC00DD2F26 /* Space-Trader-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCA409DD2217DDAC00DD2F26 /* Space_Trader_iOSTests.swift */,
+				BCA409DF2217DDAC00DD2F26 /* Info.plist */,
+			);
+			path = "Space-Trader-iOSTests";
+			sourceTree = "<group>";
+		};
+		BCA409E72217DDAC00DD2F26 /* Space-Trader-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCA409E82217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift */,
+				BCA409EA2217DDAC00DD2F26 /* Info.plist */,
+			);
+			path = "Space-Trader-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCA409C42217DDAC00DD2F26 /* Space-Trader-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA409ED2217DDAC00DD2F26 /* Build configuration list for PBXNativeTarget "Space-Trader-iOS" */;
+			buildPhases = (
+				BCA409C12217DDAC00DD2F26 /* Sources */,
+				BCA409C22217DDAC00DD2F26 /* Frameworks */,
+				BCA409C32217DDAC00DD2F26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Space-Trader-iOS";
+			productName = "Space-Trader-iOS";
+			productReference = BCA409C52217DDAC00DD2F26 /* Space-Trader-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCA409D82217DDAC00DD2F26 /* Space-Trader-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA409F02217DDAC00DD2F26 /* Build configuration list for PBXNativeTarget "Space-Trader-iOSTests" */;
+			buildPhases = (
+				BCA409D52217DDAC00DD2F26 /* Sources */,
+				BCA409D62217DDAC00DD2F26 /* Frameworks */,
+				BCA409D72217DDAC00DD2F26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCA409DB2217DDAC00DD2F26 /* PBXTargetDependency */,
+			);
+			name = "Space-Trader-iOSTests";
+			productName = "Space-Trader-iOSTests";
+			productReference = BCA409D92217DDAC00DD2F26 /* Space-Trader-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCA409E32217DDAC00DD2F26 /* Space-Trader-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA409F32217DDAC00DD2F26 /* Build configuration list for PBXNativeTarget "Space-Trader-iOSUITests" */;
+			buildPhases = (
+				BCA409E02217DDAC00DD2F26 /* Sources */,
+				BCA409E12217DDAC00DD2F26 /* Frameworks */,
+				BCA409E22217DDAC00DD2F26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCA409E62217DDAC00DD2F26 /* PBXTargetDependency */,
+			);
+			name = "Space-Trader-iOSUITests";
+			productName = "Space-Trader-iOSUITests";
+			productReference = BCA409E42217DDAC00DD2F26 /* Space-Trader-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCA409BD2217DDAC00DD2F26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Rohan Rk";
+				TargetAttributes = {
+					BCA409C42217DDAC00DD2F26 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BCA409D82217DDAC00DD2F26 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BCA409C42217DDAC00DD2F26;
+					};
+					BCA409E32217DDAC00DD2F26 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BCA409C42217DDAC00DD2F26;
+					};
+				};
+			};
+			buildConfigurationList = BCA409C02217DDAC00DD2F26 /* Build configuration list for PBXProject "Space-Trader-iOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCA409BC2217DDAC00DD2F26;
+			productRefGroup = BCA409C62217DDAC00DD2F26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCA409C42217DDAC00DD2F26 /* Space-Trader-iOS */,
+				BCA409D82217DDAC00DD2F26 /* Space-Trader-iOSTests */,
+				BCA409E32217DDAC00DD2F26 /* Space-Trader-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCA409C32217DDAC00DD2F26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA409D32217DDAC00DD2F26 /* LaunchScreen.storyboard in Resources */,
+				BCA409D02217DDAC00DD2F26 /* Assets.xcassets in Resources */,
+				BCA409CE2217DDAC00DD2F26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA409D72217DDAC00DD2F26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA409E22217DDAC00DD2F26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCA409C12217DDAC00DD2F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA409CB2217DDAC00DD2F26 /* ViewController.swift in Sources */,
+				BCA409C92217DDAC00DD2F26 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA409D52217DDAC00DD2F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA409DE2217DDAC00DD2F26 /* Space_Trader_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCA409E02217DDAC00DD2F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA409E92217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCA409DB2217DDAC00DD2F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCA409C42217DDAC00DD2F26 /* Space-Trader-iOS */;
+			targetProxy = BCA409DA2217DDAC00DD2F26 /* PBXContainerItemProxy */;
+		};
+		BCA409E62217DDAC00DD2F26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCA409C42217DDAC00DD2F26 /* Space-Trader-iOS */;
+			targetProxy = BCA409E52217DDAC00DD2F26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCA409CC2217DDAC00DD2F26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCA409CD2217DDAC00DD2F26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCA409D12217DDAC00DD2F26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCA409D22217DDAC00DD2F26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCA409EB2217DDAC00DD2F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCA409EC2217DDAC00DD2F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCA409EE2217DDAC00DD2F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Space-Trader-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosgatech.Space-Trader-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCA409EF2217DDAC00DD2F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Space-Trader-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosgatech.Space-Trader-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCA409F12217DDAC00DD2F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Space-Trader-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosgatech.Space-Trader-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space-Trader-iOS.app/Space-Trader-iOS";
+			};
+			name = Debug;
+		};
+		BCA409F22217DDAC00DD2F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Space-Trader-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosgatech.Space-Trader-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space-Trader-iOS.app/Space-Trader-iOS";
+			};
+			name = Release;
+		};
+		BCA409F42217DDAC00DD2F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Space-Trader-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosgatech.Space-Trader-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Space-Trader-iOS";
+			};
+			name = Debug;
+		};
+		BCA409F52217DDAC00DD2F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Space-Trader-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iosgatech.Space-Trader-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Space-Trader-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCA409C02217DDAC00DD2F26 /* Build configuration list for PBXProject "Space-Trader-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA409EB2217DDAC00DD2F26 /* Debug */,
+				BCA409EC2217DDAC00DD2F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA409ED2217DDAC00DD2F26 /* Build configuration list for PBXNativeTarget "Space-Trader-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA409EE2217DDAC00DD2F26 /* Debug */,
+				BCA409EF2217DDAC00DD2F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA409F02217DDAC00DD2F26 /* Build configuration list for PBXNativeTarget "Space-Trader-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA409F12217DDAC00DD2F26 /* Debug */,
+				BCA409F22217DDAC00DD2F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCA409F32217DDAC00DD2F26 /* Build configuration list for PBXNativeTarget "Space-Trader-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA409F42217DDAC00DD2F26 /* Debug */,
+				BCA409F52217DDAC00DD2F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCA409BD2217DDAC00DD2F26 /* Project object */;
+}
