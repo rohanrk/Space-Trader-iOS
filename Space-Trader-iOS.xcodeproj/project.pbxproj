@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC206040222DF1B00051B954 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC20603F222DF1B00051B954 /* Ship.swift */; };
+		BC206042222DF9190051B954 /* DifficultyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC206041222DF9190051B954 /* DifficultyView.swift */; };
+		BC206044222E25D10051B954 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC206043222E25D10051B954 /* GameViewController.swift */; };
+		BC8DE6E02218AEE70050E176 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DE6DF2218AEE70050E176 /* Player.swift */; };
 		BCA409C92217DDAC00DD2F26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409C82217DDAC00DD2F26 /* AppDelegate.swift */; };
 		BCA409CB2217DDAC00DD2F26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409CA2217DDAC00DD2F26 /* ViewController.swift */; };
 		BCA409CE2217DDAC00DD2F26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA409CC2217DDAC00DD2F26 /* Main.storyboard */; };
@@ -14,6 +18,7 @@
 		BCA409D32217DDAC00DD2F26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA409D12217DDAC00DD2F26 /* LaunchScreen.storyboard */; };
 		BCA409DE2217DDAC00DD2F26 /* Space_Trader_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409DD2217DDAC00DD2F26 /* Space_Trader_iOSTests.swift */; };
 		BCA409E92217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409E82217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift */; };
+		BCA409F72217E7C200DD2F26 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409F62217E7C200DD2F26 /* ConfigurationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC20603F222DF1B00051B954 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		BC206041222DF9190051B954 /* DifficultyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyView.swift; sourceTree = "<group>"; };
+		BC206043222E25D10051B954 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		BC8DE6DF2218AEE70050E176 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		BCA409C52217DDAC00DD2F26 /* Space-Trader-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space-Trader-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA409C82217DDAC00DD2F26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCA409CA2217DDAC00DD2F26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,7 @@
 		BCA409E42217DDAC00DD2F26 /* Space-Trader-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space-Trader-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA409E82217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_Trader_iOSUITests.swift; sourceTree = "<group>"; };
 		BCA409EA2217DDAC00DD2F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA409F62217E7C200DD2F26 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC8DE6DC2218ACA70050E176 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC8DE6DF2218AEE70050E176 /* Player.swift */,
+				BC20603F222DF1B00051B954 /* Ship.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC8DE6DD2218ACAD0050E176 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BCA409F62217E7C200DD2F26 /* ConfigurationViewController.swift */,
+				BCA409CA2217DDAC00DD2F26 /* ViewController.swift */,
+				BC206043222E25D10051B954 /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BC8DE6DE2218ACCB0050E176 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC206041222DF9190051B954 /* DifficultyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BCA409BC2217DDAC00DD2F26 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +134,10 @@
 		BCA409C72217DDAC00DD2F26 /* Space-Trader-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				BC8DE6DE2218ACCB0050E176 /* View */,
+				BC8DE6DD2218ACAD0050E176 /* Controller */,
+				BC8DE6DC2218ACA70050E176 /* Model */,
 				BCA409C82217DDAC00DD2F26 /* AppDelegate.swift */,
-				BCA409CA2217DDAC00DD2F26 /* ViewController.swift */,
 				BCA409CC2217DDAC00DD2F26 /* Main.storyboard */,
 				BCA409CF2217DDAC00DD2F26 /* Assets.xcassets */,
 				BCA409D12217DDAC00DD2F26 /* LaunchScreen.storyboard */,
@@ -259,8 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC206044222E25D10051B954 /* GameViewController.swift in Sources */,
+				BC206040222DF1B00051B954 /* Ship.swift in Sources */,
+				BC8DE6E02218AEE70050E176 /* Player.swift in Sources */,
 				BCA409CB2217DDAC00DD2F26 /* ViewController.swift in Sources */,
 				BCA409C92217DDAC00DD2F26 /* AppDelegate.swift in Sources */,
+				BC206042222DF9190051B954 /* DifficultyView.swift in Sources */,
+				BCA409F72217E7C200DD2F26 /* ConfigurationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
