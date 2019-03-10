@@ -53,13 +53,14 @@
                             </stepper>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sL8-v8-8rf">
                                 <rect key="frame" x="16" y="507" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.77074079949238583" green="0.77074079949238583" blue="0.77074079949238583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.72403952770963387" green="0.71079022508704082" blue="0.77074079949238583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="createPlayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nwg-7M-WJp"/>
+                                    <segue destination="Tby-kh-Z7h" kind="show" identifier="createPlayer" id="awe-wu-JTF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0s-GG-QVi">
@@ -178,6 +179,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="128.18590704647679"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="X1r-q5-6WK">
+            <objects>
+                <viewController id="pKu-mh-hiC" customClass="GameViewController" customModule="Space_Trader_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PML-c7-c6B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="3qX-ab-ruI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lTv-IV-Ci1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQF-73-ebM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250" y="183"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eSi-Sn-nb4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tby-kh-Z7h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ma4-vq-gOa">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pKu-mh-hiC" kind="relationship" relationship="rootViewController" id="eel-Q9-EAs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fzo-E6-rmn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="905" y="-610"/>
         </scene>
     </scenes>
 </document>

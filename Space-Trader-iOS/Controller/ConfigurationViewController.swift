@@ -26,6 +26,7 @@ class ConfigurationViewController: UIViewController, UIPickerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         pilot.text = "0"
         fighter.text = "0"
         trader.text = "0"
@@ -50,10 +51,21 @@ class ConfigurationViewController: UIViewController, UIPickerViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        let dest = segue.destination as! UINavigationController
+        let target = dest.topViewController as! GameViewController
+        // Pass the selected object to the new view controller.
+        target.player = self.player
+    }
+
     
     func createPlayer(name: String, difficulty: Difficulty, pilot: Int, fighter: Int, trader: Int, engineer: Int) -> Bool {
         
-        if (pilot + fighter + trader + engineer == 16) {
+        if pilot + fighter + trader + engineer == 16 && name != "" {
             self.player = Player(name: name, difficulty: difficulty, pilot: pilot, trader: trader, fighter: fighter, engineer: engineer)
             return true
         } else {
@@ -88,7 +100,7 @@ class ConfigurationViewController: UIViewController, UIPickerViewDelegate {
     @IBAction func createPlayer(_ sender: Any) {
         if let name = nameField.text, let pilotVal = Int(pilot.text!), let fighterVal = Int(fighter.text!), let traderVal = Int(trader.text!), let engineerVal = Int(engineer.text!) {
             if createPlayer(name: name, difficulty: difficulty.selected!, pilot: pilotVal, fighter: fighterVal, trader: traderVal, engineer: engineerVal) {
-                // MARK: Segue
+                self.performSegue(withIdentifier: "createPlayer", sender: self)
             } else {
                 let alert = UIAlertController(title: "Invalid Input", message: "Please type in a name and make sure your points add up to 16", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
@@ -97,15 +109,4 @@ class ConfigurationViewController: UIViewController, UIPickerViewDelegate {
                 
         }
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
