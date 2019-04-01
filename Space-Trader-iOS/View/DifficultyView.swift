@@ -11,14 +11,13 @@ import UIKit
 class DifficultyView: UIPickerView, UIPickerViewDataSource {
     
     var selected: Difficulty? = .easy
-    let difficulties = Difficulty.allValues
+    let difficulties = Difficulty.allCases
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        // MARK: Implement
         return difficulties.count
     }
 

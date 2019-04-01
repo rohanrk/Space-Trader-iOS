@@ -10,3 +10,7 @@ import Foundation
 protocol Ship {
     
 }
+
+struct Gnat: Ship {
+    
+}

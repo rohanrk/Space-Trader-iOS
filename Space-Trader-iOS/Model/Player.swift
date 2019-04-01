@@ -33,35 +33,7 @@ struct Player {
     }
 }
 
-enum Difficulty: String, EnumCollection {
+enum Difficulty: String, CaseIterable {
     
     case easy = "Easy", medium = "Medium", hard = "Hard"
-}
-
-
-// MARK: Enum conforms to CaseIterable when updated to Swift 4.2. 
-public protocol EnumCollection: Hashable {
-    static func cases() -> AnySequence<Self>
-    static var allValues: [Self] { get }
-}
-
-public extension EnumCollection {
-    
-    public static func cases() -> AnySequence<Self> {
-        return AnySequence { () -> AnyIterator<Self> in
-            var raw = 0
-            return AnyIterator {
-                let current: Self = withUnsafePointer(to: &raw) { $0.withMemoryRebound(to: self, capacity: 1) { $0.pointee } }
-                guard current.hashValue == raw else {
-                    return nil
-                }
-                raw += 1
-                return current
-            }
-        }
-    }
-    
-    public static var allValues: [Self] {
-        return Array(self.cases())
-    }
 }
