@@ -16,7 +16,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var planetLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        player?.location = Universe.solarSystems.randomElement()?.planets.randomElement()
+        player?.location = player?.system?.planets.randomElement()
         planetLabel.text = player?.location?.name ?? "Initial"
         planetLabel.textColor = .white
         planetLabel.font = UIFont.preferredFont(forTextStyle: .largeTitle).withSize(36)
