@@ -10,9 +10,20 @@ import UIKit
 
 class MarketViewController: UITabBarController {
 
+    var player: Player?
+    // var market: Market?
+    // let techLevel = player.location.TL
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = false
+    self.navigationController?.navigationBar.isHidden = false
+        let buy = self.viewControllers?[0] as! BuyViewController
+        
+        let sell = self.viewControllers?[1] as! SellViewController
+        
+        sell.player = self.player
+        buy.player = self.player
+        
     }
     
 

@@ -153,8 +153,8 @@ class Universe {
         "Asgard"
     ]
     
-    static let solarSystems: Set<SolarSystem> = Set()
-    static let locations: Dictionary<String, Coordinate> = Dictionary()
+    static var solarSystems: Set<SolarSystem> = Set()
+    static var locations: Dictionary<String, Coordinate> = Dictionary()
     
     private static let X_SIZE: Int = 150
     private static let Y_SIZE: Int = 100
@@ -163,18 +163,23 @@ class Universe {
     
     private static func generateUniverse() {
         generateSystems(systems: NUM_SYSTEMS)
-        generatePlanets(planets: MAX_PLANETS)
     }
     
     private static func generateSystems(systems: Int) {
         for _ in 0..<systems {
-            
+            let index = Int.random(in: 0..<names.count)
+            var system = SolarSystem(name: names[index], x: Int.random(in: 0..<X_SIZE), y: Int.random(in: 0..<X_SIZE))
+            names.remove(at: index)
+            generatePlanets(system: &system, planets: MAX_PLANETS)
+            solarSystems.insert(system)
+            locations[system.name] = system.location
         }
     }
     
-    private static func generatePlanets(planets: Int) {
+    private static func generatePlanets(system: inout SolarSystem, planets: Int) {
+        
         for _ in 0..<planets {
-            
+            system.addPlanet(planet: Planet(name: names[Int.random(in: 0..<names.count)], tech: Int.random(in: 0...8)))
         }
     }
     
@@ -186,14 +191,17 @@ class Universe {
 
 struct SolarSystem: Hashable {
     
-    var hashValue: Int { return location.hashValue }
-    let planets: Set<Planet> = Set()
+    var planets: Set<Planet> = Set()
     var name: String
     var location: Coordinate
     
     init(name: String, x: Int, y: Int) {
         self.name = name
         self.location = Coordinate(x: x, y: y)
+    }
+    
+    mutating func addPlanet(planet: Planet) {
+        planets.insert(planet)
     }
     
     static func ==(lhs: SolarSystem, rhs: SolarSystem) -> Bool {
@@ -208,9 +216,8 @@ struct SolarSystem: Hashable {
 
 struct Planet: Hashable {
     
-    var hashValue: Int { return name.hashValue }
-    private var name: String
-    private var techLevel: Int
+    var name: String
+    var techLevel: Int
     
     init(name: String, tech: Int) {
         self.name = name
@@ -228,7 +235,6 @@ struct Planet: Hashable {
 }
 
 struct Coordinate: Hashable {
-    var hashValue: Int { return x.hashValue + y.hashValue }
     var x: Int
     var y: Int
     

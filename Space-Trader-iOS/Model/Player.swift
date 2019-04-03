@@ -18,6 +18,8 @@ struct Player {
     var fighter: Int
     var engineer: Int
     
+    var location: Planet?
+    
     init(name: String, difficulty: Difficulty, pilot: Int,
          trader: Int, fighter: Int, engineer: Int) {
         self.name = name

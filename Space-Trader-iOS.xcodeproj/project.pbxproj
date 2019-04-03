@@ -13,15 +13,19 @@
 		BC206042222DF9190051B954 /* DifficultyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC206041222DF9190051B954 /* DifficultyView.swift */; };
 		BC206044222E25D10051B954 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC206043222E25D10051B954 /* GameViewController.swift */; };
 		BC206046223570B60051B954 /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC206045223570B60051B954 /* Universe.swift */; };
+		BC54E0852255302900D6F235 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54E0842255302900D6F235 /* BuyViewController.swift */; };
+		BC54E0872255303900D6F235 /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54E0862255303900D6F235 /* SellViewController.swift */; };
+		BC54E08922553B5F00D6F235 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54E08822553B5F00D6F235 /* Market.swift */; };
 		BC8DE6E02218AEE70050E176 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DE6DF2218AEE70050E176 /* Player.swift */; };
 		BCA409C92217DDAC00DD2F26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409C82217DDAC00DD2F26 /* AppDelegate.swift */; };
-		BCA409CB2217DDAC00DD2F26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409CA2217DDAC00DD2F26 /* ViewController.swift */; };
 		BCA409CE2217DDAC00DD2F26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA409CC2217DDAC00DD2F26 /* Main.storyboard */; };
 		BCA409D02217DDAC00DD2F26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCA409CF2217DDAC00DD2F26 /* Assets.xcassets */; };
 		BCA409D32217DDAC00DD2F26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCA409D12217DDAC00DD2F26 /* LaunchScreen.storyboard */; };
 		BCA409DE2217DDAC00DD2F26 /* Space_Trader_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409DD2217DDAC00DD2F26 /* Space_Trader_iOSTests.swift */; };
 		BCA409E92217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409E82217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift */; };
 		BCA409F72217E7C200DD2F26 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409F62217E7C200DD2F26 /* ConfigurationViewController.swift */; };
+		BCAA5CC22252920F001E3E9A /* TradeGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAA5CC12252920F001E3E9A /* TradeGood.swift */; };
+		BCAA5CC622529359001E3E9A /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAA5CC522529359001E3E9A /* MarketView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +52,12 @@
 		BC206041222DF9190051B954 /* DifficultyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyView.swift; sourceTree = "<group>"; };
 		BC206043222E25D10051B954 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BC206045223570B60051B954 /* Universe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universe.swift; sourceTree = "<group>"; };
+		BC54E0842255302900D6F235 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		BC54E0862255303900D6F235 /* SellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
+		BC54E08822553B5F00D6F235 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 		BC8DE6DF2218AEE70050E176 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		BCA409C52217DDAC00DD2F26 /* Space-Trader-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space-Trader-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCA409C82217DDAC00DD2F26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BCA409CA2217DDAC00DD2F26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCA409CD2217DDAC00DD2F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCA409CF2217DDAC00DD2F26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCA409D22217DDAC00DD2F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +69,8 @@
 		BCA409E82217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_Trader_iOSUITests.swift; sourceTree = "<group>"; };
 		BCA409EA2217DDAC00DD2F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCA409F62217E7C200DD2F26 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		BCAA5CC12252920F001E3E9A /* TradeGood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeGood.swift; sourceTree = "<group>"; };
+		BCAA5CC522529359001E3E9A /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,8 @@
 				BC8DE6DF2218AEE70050E176 /* Player.swift */,
 				BC20603F222DF1B00051B954 /* Ship.swift */,
 				BC206045223570B60051B954 /* Universe.swift */,
+				BCAA5CC12252920F001E3E9A /* TradeGood.swift */,
+				BC54E08822553B5F00D6F235 /* Market.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,10 +114,11 @@
 			isa = PBXGroup;
 			children = (
 				BCA409F62217E7C200DD2F26 /* ConfigurationViewController.swift */,
-				BCA409CA2217DDAC00DD2F26 /* ViewController.swift */,
 				BC206043222E25D10051B954 /* GameViewController.swift */,
 				BC11D740224E9A61000856CC /* MarketViewController.swift */,
 				BC11D742224E9B23000856CC /* TravelViewController.swift */,
+				BC54E0842255302900D6F235 /* BuyViewController.swift */,
+				BC54E0862255303900D6F235 /* SellViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				BC206041222DF9190051B954 /* DifficultyView.swift */,
+				BCAA5CC522529359001E3E9A /* MarketView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -307,15 +319,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCAA5CC622529359001E3E9A /* MarketView.swift in Sources */,
+				BC54E0872255303900D6F235 /* SellViewController.swift in Sources */,
 				BC206044222E25D10051B954 /* GameViewController.swift in Sources */,
 				BC206040222DF1B00051B954 /* Ship.swift in Sources */,
 				BC206046223570B60051B954 /* Universe.swift in Sources */,
 				BC8DE6E02218AEE70050E176 /* Player.swift in Sources */,
+				BC54E0852255302900D6F235 /* BuyViewController.swift in Sources */,
 				BC11D743224E9B23000856CC /* TravelViewController.swift in Sources */,
-				BCA409CB2217DDAC00DD2F26 /* ViewController.swift in Sources */,
 				BCA409C92217DDAC00DD2F26 /* AppDelegate.swift in Sources */,
+				BC54E08922553B5F00D6F235 /* Market.swift in Sources */,
 				BC206042222DF9190051B954 /* DifficultyView.swift in Sources */,
 				BC11D741224E9A61000856CC /* MarketViewController.swift in Sources */,
+				BCAA5CC22252920F001E3E9A /* TradeGood.swift in Sources */,
 				BCA409F72217E7C200DD2F26 /* ConfigurationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,10 +7,19 @@
 //
 
 import Foundation
-protocol Ship {
+class Ship {
     
+    let space: Int = 15
+    var spaceRemaining: Int {
+        get {
+            let space = self.space - self.inventory.map { $0.value.amount }.reduce(0, +)
+            return space > 0 ? space : 0
+        }
+    }
+    
+    lazy var inventory: Dictionary<String, Tradegood> = TradeGoodFactory.getGoods()
 }
 
-struct Gnat: Ship {
+class Gnat: Ship {
     
 }

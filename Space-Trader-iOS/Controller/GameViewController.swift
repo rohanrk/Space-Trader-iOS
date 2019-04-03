@@ -13,22 +13,19 @@ class GameViewController: UIViewController {
     var player: Player?
     let universe = Universe.shared()
     
+    @IBOutlet weak var planetLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        player?.location = Universe.solarSystems.randomElement()?.planets.randomElement()
+        planetLabel.text = player?.location?.name ?? "Initial"
+        planetLabel.textColor = .white
+        planetLabel.font = UIFont.preferredFont(forTextStyle: .largeTitle).withSize(36)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
     }
-
     
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
     /*
     // MARK: - Navigation
 

@@ -10,6 +10,9 @@ import UIKit
 
 class TravelViewController: UIViewController {
 
+    var player: Player?
+    var systems: Set<SolarSystem>?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
