@@ -189,7 +189,7 @@ class Universe {
     
 }
 
-struct SolarSystem: Hashable {
+struct SolarSystem: Hashable, Equatable {
     
     var planets: Set<Planet> = Set()
     var name: String
@@ -214,7 +214,7 @@ struct SolarSystem: Hashable {
     
 }
 
-struct Planet: Hashable {
+struct Planet: Hashable, Equatable {
     
     var name: String
     var techLevel: Int
@@ -234,7 +234,7 @@ struct Planet: Hashable {
     
 }
 
-struct Coordinate: Hashable {
+struct Coordinate: Hashable, Equatable {
     var x: Int
     var y: Int
     
