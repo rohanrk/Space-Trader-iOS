@@ -25,7 +25,7 @@
 		BCA409E92217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409E82217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift */; };
 		BCA409F72217E7C200DD2F26 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409F62217E7C200DD2F26 /* ConfigurationViewController.swift */; };
 		BCAA5CC22252920F001E3E9A /* TradeGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAA5CC12252920F001E3E9A /* TradeGood.swift */; };
-		BCAA5CC622529359001E3E9A /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAA5CC522529359001E3E9A /* MarketView.swift */; };
+		BCE3E5A9226BAD2A00CE53C7 /* MarketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3E5A8226BAD2A00CE53C7 /* MarketCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +70,7 @@
 		BCA409EA2217DDAC00DD2F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCA409F62217E7C200DD2F26 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		BCAA5CC12252920F001E3E9A /* TradeGood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeGood.swift; sourceTree = "<group>"; };
-		BCAA5CC522529359001E3E9A /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		BCE3E5A8226BAD2A00CE53C7 /* MarketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				BC206041222DF9190051B954 /* DifficultyView.swift */,
-				BCAA5CC522529359001E3E9A /* MarketView.swift */,
+				BCE3E5A8226BAD2A00CE53C7 /* MarketCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -319,8 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCAA5CC622529359001E3E9A /* MarketView.swift in Sources */,
 				BC54E0872255303900D6F235 /* SellViewController.swift in Sources */,
+				BCE3E5A9226BAD2A00CE53C7 /* MarketCell.swift in Sources */,
 				BC206044222E25D10051B954 /* GameViewController.swift in Sources */,
 				BC206040222DF1B00051B954 /* Ship.swift in Sources */,
 				BC206046223570B60051B954 /* Universe.swift in Sources */,

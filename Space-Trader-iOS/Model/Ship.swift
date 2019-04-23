@@ -17,9 +17,7 @@ class Ship {
         }
     }
     
-    lazy var inventory: Dictionary<String, Tradegood> = TradeGoodFactory.getGoods()
-}
-
-class Gnat: Ship {
+    var fuelCapacity = 1000
     
+    lazy var inventory: Dictionary<String, Tradegood> = TradeGoodFactory.getGoods()
 }

@@ -10,7 +10,7 @@ import Foundation
 struct Player {
     
     var name: String
-    var ship: String = "Gnat"
+    var ship: Ship = Ship()
     var difficulty: Difficulty
     var credits: Int = 1000
     var pilot: Int
@@ -18,6 +18,7 @@ struct Player {
     var fighter: Int
     var engineer: Int
     
+    var system: SolarSystem?
     var location: Planet?
     
     init(name: String, difficulty: Difficulty, pilot: Int,

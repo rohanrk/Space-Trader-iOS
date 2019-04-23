@@ -179,7 +179,9 @@ class Universe {
     private static func generatePlanets(system: inout SolarSystem, planets: Int) {
         
         for _ in 0..<planets {
-            system.addPlanet(planet: Planet(name: names[Int.random(in: 0..<names.count)], tech: Int.random(in: 0...8)))
+            let index = Int.random(in: 0..<names.count)
+            system.addPlanet(planet: Planet(name: names[index], tech: Int.random(in: 0...8)))
+            names.remove(at: index)
         }
     }
     
@@ -218,6 +220,7 @@ struct Planet: Hashable, Equatable {
     
     var name: String
     var techLevel: Int
+    lazy var market: Market = self.createMarket()
     
     init(name: String, tech: Int) {
         self.name = name
@@ -228,9 +231,12 @@ struct Planet: Hashable, Equatable {
         self.init(name: name, tech: 1)
     }
     
+    func createMarket() -> Market { return Market(tech: techLevel) }
+    
     static func ==(lhs: Planet, rhs: Planet) -> Bool {
         return lhs.name == rhs.name
     }
+    
     
 }
 

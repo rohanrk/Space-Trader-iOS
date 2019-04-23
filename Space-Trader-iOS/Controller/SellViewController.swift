@@ -9,42 +9,66 @@
 import UIKit
 
 class SellViewController: UITableViewController {
-
-    @IBOutlet weak var goods: MarketView!
     
     var player: Player?
+    var market: Market?
+    var goods: Dictionary<String, Tradegood>?
+    
+    @IBOutlet weak var sellGoods: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.goods = player?.ship.inventory
+        configurePrices()
+        self.sellGoods.reloadData()
+        //sellGoods.dataSource = self
+        //sellGoods.delegate = self
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        let parent = self.tabBarController as? MarketViewController
+        parent?.player = self.player
+        parent?.market = self.market
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+
+        return GoodType.allCases.count
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sellGood", for: indexPath) as! SellCell
+        // Configure the cell
+        let name = GoodType.allCases[indexPath.row].rawValue
+        cell.textLabel?.text = name
+        cell.amount.text = String(goods![name]!.amount)
+        cell.price.text = "\(String(goods![name]!.price)) credits"
+        cell.selectionStyle = .none
+        cell.delegate = self
+        
         return cell
     }
-    */
+    
+    private func configurePrices() {
+        for (name, good) in market!.goods {
+            self.goods![name]?.price = good.price
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -91,4 +115,24 @@ class SellViewController: UITableViewController {
     }
     */
 
+}
+
+extension SellViewController: MarketCellDelegate {
+    
+    func handleTransaction(good: String) -> Bool {
+        let item = self.market!.goods[good]
+        let playerItem = self.player!.ship.inventory[good]
+        if playerItem!.amount <= 0 {
+            let alert = UIAlertController(title: "Invalid sell", message: "You don't have that item!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+            return false
+        } else {
+            self.player?.credits += item!.price
+            self.player!.ship.inventory[good]?.amount -= 1
+            self.market!.goods[good]?.amount += 1
+            return true
+        }
+    }
+    
 }
