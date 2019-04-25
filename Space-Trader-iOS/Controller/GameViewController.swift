@@ -35,6 +35,7 @@ class GameViewController: UIViewController {
     }
     
     func setDetailLabel() {
+        self.planetLabel.text = player?.location?.name
         self.playerData.numberOfLines = 3
         self.playerData.text = "Fuel: \(String(player!.ship.fuelCapacity))\nCredits: \(String(player!.credits))\nCargo Space: \(String(player!.ship.spaceRemaining))"
     }
@@ -61,11 +62,6 @@ class GameViewController: UIViewController {
         } else {
             
         }
-    }
-    
-    @IBAction func unwindFromTravel(_ sender: UIStoryboardSegue) {
-        let source = sender.source as! TravelViewController
-        self.player = source.player
     }
 
 }

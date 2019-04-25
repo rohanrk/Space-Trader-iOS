@@ -575,11 +575,9 @@
                         <outlet property="systemButton" destination="Ex2-8T-0EE" id="Ofw-Kk-N8w"/>
                         <outlet property="travelPicker" destination="DiU-WP-B19" id="y0b-7q-Mdu"/>
                         <outlet property="travelView" destination="I15-4X-KGi" id="qGQ-Gf-OCn"/>
-                        <segue destination="D0A-xm-nc1" kind="unwind" identifier="traveled" unwindAction="unwindFromTravel:" id="DHc-TC-G9d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JcM-qa-mBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="D0A-xm-nc1" userLabel="Exit" sceneMemberID="exit"/>
                 <view contentMode="scaleToFill" id="I15-4X-KGi" customClass="TravelView" customModule="Space_Trader_iOS" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="315" height="250"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

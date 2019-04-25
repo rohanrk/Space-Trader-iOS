@@ -157,7 +157,7 @@ class TravelViewController: UIViewController, UIPickerViewDelegate {
         
         if fuelCost! <= player!.ship.fuelCapacity {
             updateFuel(amount: self.fuelCost!)
-            self.performSegue(withIdentifier: "traveled", sender: self)
+            self.navigationController?.popViewController(animated: true)
         } else {
             shake(view: self.view)
         }
