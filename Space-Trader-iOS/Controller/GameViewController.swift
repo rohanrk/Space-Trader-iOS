@@ -19,7 +19,9 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.delegate = self
-        player?.location = Universe.solarSystems.randomElement()?.planets.randomElement()
+        let system = Universe.solarSystems.randomElement()
+        player?.system = system
+        player?.location = system?.planets.randomElement()
         planetLabel.text = player?.location?.name ?? "Initial"
         planetLabel.textColor = .white
         planetLabel.font = UIFont.preferredFont(forTextStyle: .largeTitle).withSize(36)
@@ -45,17 +47,26 @@ class GameViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         if segue.identifier == "market" {
             let dest = segue.destination as! MarketViewController
-            // Pass the selected object to the new view controller.
             dest.dataProtocol = self
             dest.player = self.player
             dest.market = self.player?.location?.market
+        
         } else if segue.identifier == "travel" {
+            
+            let dest = segue.destination as! TravelViewController
+            dest.player = self.player
+            dest.systems = Universe.solarSystems
             
         } else if segue.identifier == "info" {
             
         } else {
             
         }
+    }
+    
+    @IBAction func unwindFromTravel(_ sender: UIStoryboardSegue) {
+        let source = sender.source as! TravelViewController
+        self.player = source.player
     }
 
 }

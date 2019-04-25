@@ -13,6 +13,12 @@
 		BC206042222DF9190051B954 /* DifficultyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC206041222DF9190051B954 /* DifficultyView.swift */; };
 		BC206044222E25D10051B954 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC206043222E25D10051B954 /* GameViewController.swift */; };
 		BC206046223570B60051B954 /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC206045223570B60051B954 /* Universe.swift */; };
+		BC34F8772270D95D00B763B6 /* TravelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F8762270D95D00B763B6 /* TravelView.swift */; };
+		BC34F8792270D97F00B763B6 /* PlanetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F8782270D97F00B763B6 /* PlanetView.swift */; };
+		BC34F87E227109E700B763B6 /* planet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC34F87D227109E700B763B6 /* planet.jpg */; };
+		BC34F88022710A1500B763B6 /* travel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC34F87F22710A1500B763B6 /* travel.jpg */; };
+		BC34F882227173DA00B763B6 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F881227173DA00B763B6 /* InfoViewController.swift */; };
+		BC34F884227173F500B763B6 /* ShipyardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC34F883227173F500B763B6 /* ShipyardViewController.swift */; };
 		BC54E0852255302900D6F235 /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54E0842255302900D6F235 /* BuyViewController.swift */; };
 		BC54E0872255303900D6F235 /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54E0862255303900D6F235 /* SellViewController.swift */; };
 		BC54E08922553B5F00D6F235 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC54E08822553B5F00D6F235 /* Market.swift */; };
@@ -52,6 +58,12 @@
 		BC206041222DF9190051B954 /* DifficultyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyView.swift; sourceTree = "<group>"; };
 		BC206043222E25D10051B954 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BC206045223570B60051B954 /* Universe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universe.swift; sourceTree = "<group>"; };
+		BC34F8762270D95D00B763B6 /* TravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelView.swift; sourceTree = "<group>"; };
+		BC34F8782270D97F00B763B6 /* PlanetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetView.swift; sourceTree = "<group>"; };
+		BC34F87D227109E700B763B6 /* planet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planet.jpg; sourceTree = "<group>"; };
+		BC34F87F22710A1500B763B6 /* travel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = travel.jpg; sourceTree = "<group>"; };
+		BC34F881227173DA00B763B6 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		BC34F883227173F500B763B6 /* ShipyardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipyardViewController.swift; sourceTree = "<group>"; };
 		BC54E0842255302900D6F235 /* BuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
 		BC54E0862255303900D6F235 /* SellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
 		BC54E08822553B5F00D6F235 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
@@ -98,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC34F87C227109B800B763B6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BC34F87D227109E700B763B6 /* planet.jpg */,
+				BC34F87F22710A1500B763B6 /* travel.jpg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		BC8DE6DC2218ACA70050E176 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +140,8 @@
 				BC11D742224E9B23000856CC /* TravelViewController.swift */,
 				BC54E0842255302900D6F235 /* BuyViewController.swift */,
 				BC54E0862255303900D6F235 /* SellViewController.swift */,
+				BC34F881227173DA00B763B6 /* InfoViewController.swift */,
+				BC34F883227173F500B763B6 /* ShipyardViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +151,8 @@
 			children = (
 				BC206041222DF9190051B954 /* DifficultyView.swift */,
 				BCE3E5A8226BAD2A00CE53C7 /* MarketCell.swift */,
+				BC34F8762270D95D00B763B6 /* TravelView.swift */,
+				BC34F8782270D97F00B763B6 /* PlanetView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,6 +180,7 @@
 		BCA409C72217DDAC00DD2F26 /* Space-Trader-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				BC34F87C227109B800B763B6 /* Assets */,
 				BC8DE6DE2218ACCB0050E176 /* View */,
 				BC8DE6DD2218ACAD0050E176 /* Controller */,
 				BC8DE6DC2218ACA70050E176 /* Model */,
@@ -293,6 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCA409D32217DDAC00DD2F26 /* LaunchScreen.storyboard in Resources */,
+				BC34F87E227109E700B763B6 /* planet.jpg in Resources */,
+				BC34F88022710A1500B763B6 /* travel.jpg in Resources */,
 				BCA409D02217DDAC00DD2F26 /* Assets.xcassets in Resources */,
 				BCA409CE2217DDAC00DD2F26 /* Main.storyboard in Resources */,
 			);
@@ -319,15 +347,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC34F884227173F500B763B6 /* ShipyardViewController.swift in Sources */,
 				BC54E0872255303900D6F235 /* SellViewController.swift in Sources */,
 				BCE3E5A9226BAD2A00CE53C7 /* MarketCell.swift in Sources */,
 				BC206044222E25D10051B954 /* GameViewController.swift in Sources */,
 				BC206040222DF1B00051B954 /* Ship.swift in Sources */,
+				BC34F8772270D95D00B763B6 /* TravelView.swift in Sources */,
 				BC206046223570B60051B954 /* Universe.swift in Sources */,
 				BC8DE6E02218AEE70050E176 /* Player.swift in Sources */,
 				BC54E0852255302900D6F235 /* BuyViewController.swift in Sources */,
+				BC34F882227173DA00B763B6 /* InfoViewController.swift in Sources */,
 				BC11D743224E9B23000856CC /* TravelViewController.swift in Sources */,
 				BCA409C92217DDAC00DD2F26 /* AppDelegate.swift in Sources */,
+				BC34F8792270D97F00B763B6 /* PlanetView.swift in Sources */,
 				BC54E08922553B5F00D6F235 /* Market.swift in Sources */,
 				BC206042222DF9190051B954 /* DifficultyView.swift in Sources */,
 				BC11D741224E9A61000856CC /* MarketViewController.swift in Sources */,

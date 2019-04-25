@@ -17,7 +17,13 @@ class Ship {
         }
     }
     
-    var fuelCapacity = 1000
+    let MAX_FUEL = 1000
+    var fuelCapacity = 1000 {
+        didSet {
+            fuelCapacity = fuelCapacity > MAX_FUEL ? MAX_FUEL : fuelCapacity
+        }
+    }
+    let distCap: Double = pow(10, 3)
     
     lazy var inventory: Dictionary<String, Tradegood> = TradeGoodFactory.getGoods()
 }

@@ -154,7 +154,7 @@ class Universe {
     ]
     
     static var solarSystems: Set<SolarSystem> = Set()
-    static var locations: Dictionary<String, Coordinate> = Dictionary()
+    //static var locations: Dictionary<String, Coordinate> = Dictionary()
     
     private static let X_SIZE: Int = 150
     private static let Y_SIZE: Int = 100
@@ -172,7 +172,7 @@ class Universe {
             names.remove(at: index)
             generatePlanets(system: &system, planets: MAX_PLANETS)
             solarSystems.insert(system)
-            locations[system.name] = system.location
+            //locations[system.name] = system.location
         }
     }
     
@@ -207,11 +207,11 @@ struct SolarSystem: Hashable, Equatable {
     }
     
     static func ==(lhs: SolarSystem, rhs: SolarSystem) -> Bool {
-        return lhs.location == rhs.location
+        return lhs.name == rhs.name && lhs.location == rhs.location
     }
     
     static func getDistance(first: SolarSystem, second: SolarSystem) -> Double {
-        return pow(pow(Double(first.location.x - second.location.y), 2) + pow(Double(first.location.y - second.location.y) , 2), 0.5)
+        return pow(pow(Double(first.location.x - second.location.x), 2) + pow(Double(first.location.y - second.location.y) , 2), 0.5)
     }
     
 }

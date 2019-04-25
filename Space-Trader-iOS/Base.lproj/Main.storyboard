@@ -478,18 +478,171 @@
                     <view key="view" contentMode="scaleToFill" id="xuI-CI-SEV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel" translatesAutoresizingMaskIntoConstraints="NO" id="aiz-wv-8kv">
+                                <rect key="frame" x="0.0" y="0.0" width="375.00000000000011" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaE-RE-sw4">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="HCg-aL-Iwv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
+                                <state key="normal" title="Travel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="travel:" destination="ZRP-hi-FpX" eventType="touchUpInside" id="Tbv-xD-KNY"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ePk-Qu-kgd">
+                                <rect key="frame" x="0.0" y="164" width="375" height="403"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gM-d0-XMN">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="403"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ex2-8T-0EE">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="403"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addTravelView:" destination="ZRP-hi-FpX" eventType="touchUpInside" id="BxC-m0-3T0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppi-av-tec">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="403"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addPlanetView:" destination="ZRP-hi-FpX" eventType="touchUpInside" id="9sL-t5-Kio"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18S-kd-Zb6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="100"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2c-zl-W36">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="goI-32-vb6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LgF-Qx-TO6" firstAttribute="trailing" secondItem="18S-kd-Zb6" secondAttribute="trailing" id="4LF-Fw-p8I"/>
+                            <constraint firstItem="t2c-zl-W36" firstAttribute="trailing" secondItem="LgF-Qx-TO6" secondAttribute="trailing" id="55Z-hQ-sD0"/>
+                            <constraint firstItem="qaE-RE-sw4" firstAttribute="leading" secondItem="LgF-Qx-TO6" secondAttribute="leading" id="8Za-P6-qNW"/>
+                            <constraint firstItem="LgF-Qx-TO6" firstAttribute="trailing" secondItem="qaE-RE-sw4" secondAttribute="trailing" id="D6i-te-YGp"/>
+                            <constraint firstItem="t2c-zl-W36" firstAttribute="leading" secondItem="LgF-Qx-TO6" secondAttribute="leading" id="Mqv-4b-ddY"/>
+                            <constraint firstItem="LgF-Qx-TO6" firstAttribute="trailing" secondItem="ePk-Qu-kgd" secondAttribute="trailing" id="Stg-5T-a0i"/>
+                            <constraint firstItem="t2c-zl-W36" firstAttribute="top" secondItem="LgF-Qx-TO6" secondAttribute="top" id="Tnu-Io-3ZO"/>
+                            <constraint firstItem="LgF-Qx-TO6" firstAttribute="bottom" secondItem="qaE-RE-sw4" secondAttribute="bottom" id="UhH-Mp-cZF"/>
+                            <constraint firstItem="18S-kd-Zb6" firstAttribute="top" secondItem="LgF-Qx-TO6" secondAttribute="top" id="WHd-2n-Aei"/>
+                            <constraint firstItem="ePk-Qu-kgd" firstAttribute="leading" secondItem="LgF-Qx-TO6" secondAttribute="leading" id="XHp-Wa-gfd"/>
+                            <constraint firstItem="aiz-wv-8kv" firstAttribute="leading" secondItem="LgF-Qx-TO6" secondAttribute="leading" id="YjV-NW-TE8"/>
+                            <constraint firstItem="18S-kd-Zb6" firstAttribute="leading" secondItem="LgF-Qx-TO6" secondAttribute="leading" id="f4f-ii-H4d"/>
+                            <constraint firstItem="ePk-Qu-kgd" firstAttribute="top" secondItem="LgF-Qx-TO6" secondAttribute="top" constant="100" id="hUx-VX-4mp"/>
+                            <constraint firstItem="LgF-Qx-TO6" firstAttribute="bottom" secondItem="aiz-wv-8kv" secondAttribute="bottom" id="jgT-lc-reI"/>
+                            <constraint firstItem="aiz-wv-8kv" firstAttribute="trailing" secondItem="LgF-Qx-TO6" secondAttribute="trailing" id="nVx-zB-6jg"/>
+                            <constraint firstItem="qaE-RE-sw4" firstAttribute="top" secondItem="ePk-Qu-kgd" secondAttribute="bottom" id="sKq-bB-xfe"/>
+                            <constraint firstItem="ePk-Qu-kgd" firstAttribute="top" secondItem="18S-kd-Zb6" secondAttribute="bottom" id="uSv-iu-QIy"/>
+                            <constraint firstItem="t2c-zl-W36" firstAttribute="bottom" secondItem="LgF-Qx-TO6" secondAttribute="bottom" id="wIu-7i-2K6"/>
+                            <constraint firstItem="aiz-wv-8kv" firstAttribute="top" secondItem="xuI-CI-SEV" secondAttribute="top" id="xku-2m-afo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LgF-Qx-TO6"/>
                     </view>
+                    <connections>
+                        <outlet property="blurEffect" destination="t2c-zl-W36" id="dUq-QG-dT0"/>
+                        <outlet property="fuel" destination="9gM-d0-XMN" id="nFo-gB-y9c"/>
+                        <outlet property="planetButton" destination="ppi-av-tec" id="Pjy-Vj-sdn"/>
+                        <outlet property="planetPicker" destination="FuU-7p-GIl" id="ACt-vb-hca"/>
+                        <outlet property="planetView" destination="9UU-nJ-wMN" id="6ln-9I-iMn"/>
+                        <outlet property="systemButton" destination="Ex2-8T-0EE" id="Ofw-Kk-N8w"/>
+                        <outlet property="travelPicker" destination="DiU-WP-B19" id="y0b-7q-Mdu"/>
+                        <outlet property="travelView" destination="I15-4X-KGi" id="qGQ-Gf-OCn"/>
+                        <segue destination="D0A-xm-nc1" kind="unwind" identifier="traveled" unwindAction="unwindFromTravel:" id="DHc-TC-G9d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JcM-qa-mBV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="D0A-xm-nc1" userLabel="Exit" sceneMemberID="exit"/>
+                <view contentMode="scaleToFill" id="I15-4X-KGi" customClass="TravelView" customModule="Space_Trader_iOS" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="315" height="250"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DiU-WP-B19">
+                            <rect key="frame" x="0.0" y="0.0" width="315" height="200"/>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7M-H3-Lqn">
+                            <rect key="frame" x="135" y="208" width="44" height="30"/>
+                            <state key="normal" title="Select"/>
+                            <connections>
+                                <action selector="selectSystem:" destination="ZRP-hi-FpX" eventType="touchUpInside" id="fPQ-O9-OUS"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="y1D-fb-EJc" firstAttribute="trailing" secondItem="v7M-H3-Lqn" secondAttribute="trailing" constant="136" id="7Wv-ZS-BRC"/>
+                        <constraint firstItem="DiU-WP-B19" firstAttribute="top" secondItem="I15-4X-KGi" secondAttribute="top" id="DI8-gR-IT2"/>
+                        <constraint firstItem="v7M-H3-Lqn" firstAttribute="top" secondItem="DiU-WP-B19" secondAttribute="bottom" constant="8" id="cKw-4q-SbS"/>
+                        <constraint firstItem="y1D-fb-EJc" firstAttribute="trailing" secondItem="DiU-WP-B19" secondAttribute="trailing" id="foh-nE-6dy"/>
+                        <constraint firstItem="v7M-H3-Lqn" firstAttribute="leading" secondItem="y1D-fb-EJc" secondAttribute="leading" constant="135" id="gug-A3-D1K"/>
+                        <constraint firstAttribute="bottom" secondItem="DiU-WP-B19" secondAttribute="bottom" constant="50" id="lQf-Ek-1p1"/>
+                        <constraint firstItem="y1D-fb-EJc" firstAttribute="bottom" secondItem="v7M-H3-Lqn" secondAttribute="bottom" constant="12" id="xp2-gz-FQ4"/>
+                        <constraint firstItem="DiU-WP-B19" firstAttribute="leading" secondItem="y1D-fb-EJc" secondAttribute="leading" id="zCp-2O-lLh"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="y1D-fb-EJc"/>
+                </view>
+                <view contentMode="scaleToFill" id="9UU-nJ-wMN" customClass="PlanetView" customModule="Space_Trader_iOS" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="315" height="250"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FuU-7p-GIl">
+                            <rect key="frame" x="0.0" y="0.0" width="315" height="200"/>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nay-jb-3u5">
+                            <rect key="frame" x="135" y="208" width="44" height="30"/>
+                            <state key="normal" title="Select"/>
+                            <connections>
+                                <action selector="selectPlanet:" destination="ZRP-hi-FpX" eventType="touchUpInside" id="E6R-68-H4L"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="leU-ch-rum" firstAttribute="bottom" secondItem="Nay-jb-3u5" secondAttribute="bottom" constant="12" id="4Td-ha-Q9d"/>
+                        <constraint firstItem="leU-ch-rum" firstAttribute="trailing" secondItem="Nay-jb-3u5" secondAttribute="trailing" constant="136" id="8hM-BK-bt5"/>
+                        <constraint firstItem="Nay-jb-3u5" firstAttribute="top" secondItem="FuU-7p-GIl" secondAttribute="bottom" constant="8" id="Fw2-tA-rbn"/>
+                        <constraint firstItem="leU-ch-rum" firstAttribute="bottom" secondItem="FuU-7p-GIl" secondAttribute="bottom" constant="50" id="L4k-1w-Xcs"/>
+                        <constraint firstItem="FuU-7p-GIl" firstAttribute="leading" secondItem="9UU-nJ-wMN" secondAttribute="leading" id="LdX-nD-8Mb"/>
+                        <constraint firstAttribute="trailing" secondItem="FuU-7p-GIl" secondAttribute="trailing" id="V2g-mF-qZE"/>
+                        <constraint firstItem="Nay-jb-3u5" firstAttribute="leading" secondItem="leU-ch-rum" secondAttribute="leading" constant="135" id="gmt-KF-h5g"/>
+                        <constraint firstItem="FuU-7p-GIl" firstAttribute="top" secondItem="leU-ch-rum" secondAttribute="top" id="wlk-ju-xSt"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="leU-ch-rum"/>
+                </view>
             </objects>
-            <point key="canvasLocation" x="2148" y="-355"/>
+            <point key="canvasLocation" x="2148" y="-355.7721139430285"/>
         </scene>
-        <!--View Controller-->
+        <!--Shipyard View Controller-->
         <scene sceneID="NRH-N8-6NX">
             <objects>
-                <viewController id="8Oe-bB-XBg" sceneMemberID="viewController">
+                <viewController id="8Oe-bB-XBg" customClass="ShipyardViewController" customModule="Space_Trader_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XcQ-fW-wCU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -501,10 +654,10 @@
             </objects>
             <point key="canvasLocation" x="241" y="1115"/>
         </scene>
-        <!--View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="vkj-7E-VtP">
             <objects>
-                <viewController id="ZF6-9v-mhW" sceneMemberID="viewController">
+                <viewController id="ZF6-9v-mhW" customClass="InfoViewController" customModule="Space_Trader_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2XR-a1-eSw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -556,5 +709,6 @@
     </scenes>
     <resources>
         <image name="planet" width="1200" height="675"/>
+        <image name="travel" width="394" height="315"/>
     </resources>
 </document>
