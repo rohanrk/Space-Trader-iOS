@@ -47,7 +47,6 @@ class GameViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         if segue.identifier == "market" {
             let dest = segue.destination as! MarketViewController
-            dest.dataProtocol = self
             dest.player = self.player
             dest.market = self.player?.location?.market
         
@@ -71,15 +70,10 @@ class GameViewController: UIViewController {
 
 }
 
-extension GameViewController: UINavigationControllerDelegate, MarketDataDelegate {
+extension GameViewController: UINavigationControllerDelegate {
     
     
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         viewController.viewWillAppear(animated)
-    }
-    
-    func passData(player: Player, market: Market) {
-        self.player = player
-        self.player?.location?.market = market
     }
 }

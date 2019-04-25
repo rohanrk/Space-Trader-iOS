@@ -8,7 +8,7 @@
 
 import Foundation
 
-// MARK: Singleton Class
+// MARK: - Singleton Class
 class Universe {
     
     private static var universe: Universe {
@@ -191,7 +191,7 @@ class Universe {
     
 }
 
-struct SolarSystem: Hashable, Equatable {
+class SolarSystem: Hashable, Equatable {
     
     var planets: Set<Planet> = Set()
     var name: String
@@ -202,21 +202,28 @@ struct SolarSystem: Hashable, Equatable {
         self.location = Coordinate(x: x, y: y)
     }
     
-    mutating func addPlanet(planet: Planet) {
+    func addPlanet(planet: Planet) {
         planets.insert(planet)
-    }
-    
-    static func ==(lhs: SolarSystem, rhs: SolarSystem) -> Bool {
-        return lhs.name == rhs.name && lhs.location == rhs.location
     }
     
     static func getDistance(first: SolarSystem, second: SolarSystem) -> Double {
         return pow(pow(Double(first.location.x - second.location.x), 2) + pow(Double(first.location.y - second.location.y) , 2), 0.5)
     }
     
+    // MARK: - Hashable, Equitable
+    
+    static func ==(lhs: SolarSystem, rhs: SolarSystem) -> Bool {
+        return lhs.name == rhs.name && lhs.location == rhs.location
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
+        hasher.combine(location)
+    }
+    
 }
 
-struct Planet: Hashable, Equatable {
+class Planet: Hashable, Equatable {
     
     var name: String
     var techLevel: Int
@@ -227,16 +234,21 @@ struct Planet: Hashable, Equatable {
         self.techLevel = tech
     }
     
-    init(name: String) {
+    convenience init(name: String) {
         self.init(name: name, tech: 1)
     }
     
     func createMarket() -> Market { return Market(tech: techLevel) }
     
+    // MARK: - Hashable, Equitable
     static func ==(lhs: Planet, rhs: Planet) -> Bool {
         return lhs.name == rhs.name
     }
     
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
+        hasher.combine(techLevel)
+    }
     
 }
 
@@ -248,7 +260,6 @@ struct Coordinate: Hashable, Equatable {
         self.x = x
         self.y = y
     }
-    
     
     static func ==(lhs: Coordinate, rhs: Coordinate) -> Bool {
         return lhs.x == rhs.x && lhs.y == rhs.y

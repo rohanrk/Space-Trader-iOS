@@ -7,7 +7,12 @@
 //
 
 import Foundation
-class Market {
+class Market: Equatable {
+    
+    static func == (lhs: Market, rhs: Market) -> Bool {
+        return lhs.goods == rhs.goods
+    }
+    
     
     static let baseAmount = 20
     static let varianceFactor = 5

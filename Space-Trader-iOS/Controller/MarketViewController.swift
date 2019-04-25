@@ -7,17 +7,10 @@
 //
 
 import UIKit
-
-protocol MarketDataDelegate {
-    
-    func passData(player: Player, market: Market)
-}
-
 class MarketViewController: UITabBarController {
 
     var player: Player?
     var market: Market?
-    var dataProtocol: MarketDataDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,13 +24,6 @@ class MarketViewController: UITabBarController {
         
         sell.player = buy.player
         sell.market = buy.market
-    }
-    
-    
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        dataProtocol?.passData(player: self.player!, market: self.market!)
     }
 
     /*

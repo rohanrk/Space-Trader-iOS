@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct Player {
+class Player {
     
     var name: String
     var ship: Ship = Ship()
@@ -31,7 +31,7 @@ struct Player {
         self.engineer = engineer
     }
     
-    init() {
+    convenience init() {
         self.init(name: "", difficulty: .easy, pilot: 0, trader: 0, fighter: 0, engineer: 0)
     }
 }
