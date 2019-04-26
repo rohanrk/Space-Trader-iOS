@@ -15,6 +15,7 @@ class MarketViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
     self.navigationController?.navigationBar.isHidden = false
+        self.navigationItem.title = "Market"
         let buy = self.viewControllers?[0] as! BuyViewController
         
         let sell = self.viewControllers?[1] as! SellViewController
