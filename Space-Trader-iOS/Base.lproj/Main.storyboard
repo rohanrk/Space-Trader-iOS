@@ -660,52 +660,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="T7W-Me-DGk">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black-planet-asteroids" translatesAutoresizingMaskIntoConstraints="NO" id="bx0-Sp-pbY">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="T7W-Me-DGk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="453"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KU2-VG-tKn">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6H2-em-Cwv">
-                                        <rect key="frame" x="0.0" y="151" width="375" height="150.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="151" width="375" height="151"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcM-lU-tbK">
-                                        <rect key="frame" x="0.0" y="301.5" width="375" height="151"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQf-dX-Crf">
-                                        <rect key="frame" x="0.0" y="452.5" width="375" height="150.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="302" width="375" height="151"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzb-x9-Sfy">
+                                <rect key="frame" x="92" y="551" width="191" height="96"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="42"/>
+                                <state key="normal" title="Start Over">
+                                    <color key="titleColor" red="0.84166309931506844" green="0.0" blue="0.077375856164383555" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startOver:" destination="ZF6-9v-mhW" eventType="touchUpInside" id="NaC-JV-al9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="NXE-Wu-ezm" firstAttribute="bottom" secondItem="T7W-Me-DGk" secondAttribute="bottom" id="7kA-Ci-Bqb"/>
+                            <constraint firstItem="bx0-Sp-pbY" firstAttribute="bottom" secondItem="NXE-Wu-ezm" secondAttribute="bottom" id="5ok-Lq-w0N"/>
+                            <constraint firstItem="NXE-Wu-ezm" firstAttribute="bottom" secondItem="T7W-Me-DGk" secondAttribute="bottom" constant="150" id="7kA-Ci-Bqb"/>
+                            <constraint firstItem="Mzb-x9-Sfy" firstAttribute="top" secondItem="T7W-Me-DGk" secondAttribute="bottom" constant="34" id="9VX-7H-8Wh"/>
+                            <constraint firstItem="NXE-Wu-ezm" firstAttribute="bottom" secondItem="Mzb-x9-Sfy" secondAttribute="bottom" constant="20" id="OET-if-ulO"/>
                             <constraint firstItem="T7W-Me-DGk" firstAttribute="leading" secondItem="NXE-Wu-ezm" secondAttribute="leading" id="UxW-rP-mLl"/>
+                            <constraint firstItem="Mzb-x9-Sfy" firstAttribute="leading" secondItem="NXE-Wu-ezm" secondAttribute="leading" constant="92" id="Uz2-1E-r3W"/>
+                            <constraint firstItem="NXE-Wu-ezm" firstAttribute="trailing" secondItem="Mzb-x9-Sfy" secondAttribute="trailing" constant="92" id="dDO-lz-eJT"/>
+                            <constraint firstItem="bx0-Sp-pbY" firstAttribute="leading" secondItem="NXE-Wu-ezm" secondAttribute="leading" id="eaF-ex-rg3"/>
+                            <constraint firstItem="bx0-Sp-pbY" firstAttribute="top" secondItem="NXE-Wu-ezm" secondAttribute="top" id="fuM-AZ-lGb"/>
+                            <constraint firstAttribute="trailing" secondItem="bx0-Sp-pbY" secondAttribute="trailing" id="ilD-1c-cW6"/>
                             <constraint firstItem="NXE-Wu-ezm" firstAttribute="trailing" secondItem="T7W-Me-DGk" secondAttribute="trailing" id="kmt-BK-HDh"/>
+                            <constraint firstItem="Mzb-x9-Sfy" firstAttribute="centerX" secondItem="2XR-a1-eSw" secondAttribute="centerX" id="p1S-aN-MUP"/>
                             <constraint firstItem="T7W-Me-DGk" firstAttribute="top" secondItem="NXE-Wu-ezm" secondAttribute="top" id="sJA-aP-gEo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NXE-Wu-ezm"/>
                     </view>
+                    <connections>
+                        <outlet property="retire" destination="kcM-lU-tbK" id="BLt-Jb-IHJ"/>
+                        <outlet property="totalValue" destination="KU2-VG-tKn" id="Sd4-gl-LO8"/>
+                        <outlet property="valueofMoon" destination="6H2-em-Cwv" id="e0B-ul-iJm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Vd-Zi-8Ru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1367" y="1085"/>
+            <point key="canvasLocation" x="1365.5999999999999" y="1084.4077961019491"/>
         </scene>
     </scenes>
     <resources>
+        <image name="black-planet-asteroids" width="1280" height="800"/>
         <image name="planet" width="1200" height="675"/>
         <image name="travel" width="394" height="315"/>
     </resources>

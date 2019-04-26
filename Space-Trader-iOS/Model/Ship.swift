@@ -25,5 +25,5 @@ class Ship: Codable {
     }
     let distCap: Double = pow(10, 3)
     
-    lazy var inventory: Dictionary<String, Tradegood> = TradeGoodFactory.getGoods()
+    var inventory: Dictionary<String, Tradegood> = TradeGoodFactory.getGoods()
 }

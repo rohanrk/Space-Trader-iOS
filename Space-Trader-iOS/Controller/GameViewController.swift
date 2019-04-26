@@ -65,9 +65,8 @@ class GameViewController: UIViewController {
             dest.systems = Universe.solarSystems
             
         } else if segue.identifier == "info" {
-            
-        } else {
-            
+            let dest = segue.destination as! InfoViewController
+            dest.player = self.player
         }
     }
     

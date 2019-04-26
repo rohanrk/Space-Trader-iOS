@@ -31,6 +31,7 @@
 		BCA409E92217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409E82217DDAC00DD2F26 /* Space_Trader_iOSUITests.swift */; };
 		BCA409F72217E7C200DD2F26 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA409F62217E7C200DD2F26 /* ConfigurationViewController.swift */; };
 		BCAA5CC22252920F001E3E9A /* TradeGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAA5CC12252920F001E3E9A /* TradeGood.swift */; };
+		BCB36C182272C0DE009CBFF2 /* black-planet-asteroids.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BCB36C172272C0DE009CBFF2 /* black-planet-asteroids.jpg */; };
 		BCE3E5A9226BAD2A00CE53C7 /* MarketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3E5A8226BAD2A00CE53C7 /* MarketCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		BCA409EA2217DDAC00DD2F26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCA409F62217E7C200DD2F26 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		BCAA5CC12252920F001E3E9A /* TradeGood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeGood.swift; sourceTree = "<group>"; };
+		BCB36C172272C0DE009CBFF2 /* black-planet-asteroids.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "black-planet-asteroids.jpg"; sourceTree = "<group>"; };
 		BCE3E5A8226BAD2A00CE53C7 /* MarketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 			children = (
 				BC34F87D227109E700B763B6 /* planet.jpg */,
 				BC34F87F22710A1500B763B6 /* travel.jpg */,
+				BCB36C172272C0DE009CBFF2 /* black-planet-asteroids.jpg */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				BC34F87E227109E700B763B6 /* planet.jpg in Resources */,
 				BC34F88022710A1500B763B6 /* travel.jpg in Resources */,
 				BCA409D02217DDAC00DD2F26 /* Assets.xcassets in Resources */,
+				BCB36C182272C0DE009CBFF2 /* black-planet-asteroids.jpg in Resources */,
 				BCA409CE2217DDAC00DD2F26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
