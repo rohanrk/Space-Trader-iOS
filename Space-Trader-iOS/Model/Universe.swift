@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - Singleton Class
-class Universe {
+class Universe: Codable {
     
     private static var universe: Universe {
         
@@ -191,7 +191,7 @@ class Universe {
     
 }
 
-class SolarSystem: Hashable, Equatable {
+class SolarSystem: Hashable, Equatable, Codable {
     
     var planets: Set<Planet> = Set()
     var name: String
@@ -223,7 +223,7 @@ class SolarSystem: Hashable, Equatable {
     
 }
 
-class Planet: Hashable, Equatable {
+class Planet: Hashable, Equatable, Codable {
     
     var name: String
     var techLevel: Int
@@ -252,7 +252,7 @@ class Planet: Hashable, Equatable {
     
 }
 
-struct Coordinate: Hashable, Equatable {
+struct Coordinate: Hashable, Equatable, Codable {
     var x: Int
     var y: Int
     

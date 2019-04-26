@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Market: Equatable {
+class Market: Equatable, Codable {
     
     static func == (lhs: Market, rhs: Market) -> Bool {
         return lhs.goods == rhs.goods

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Ship {
+class Ship: Codable {
     
     let space: Int = 15
     var spaceRemaining: Int {

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct Tradegood: Hashable {
+struct Tradegood: Hashable, Codable {
     
     static let MIN_PRICE = 20
     static let INCREASE_PER_TECH_LEVEL = 10
@@ -29,7 +29,7 @@ struct Tradegood: Hashable {
     
 }
 
-enum GoodType: String, CaseIterable {
+enum GoodType: String, CaseIterable, Codable {
     
     case water = "water"
     case furs = "furs"

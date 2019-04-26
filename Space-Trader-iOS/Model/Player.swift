@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Player {
+class Player: Codable {
     
     var name: String
     var ship: Ship = Ship()
@@ -30,13 +30,9 @@ class Player {
         self.fighter = fighter
         self.engineer = engineer
     }
-    
-    convenience init() {
-        self.init(name: "", difficulty: .easy, pilot: 0, trader: 0, fighter: 0, engineer: 0)
-    }
 }
 
-enum Difficulty: String, CaseIterable {
+enum Difficulty: String, CaseIterable, Codable {
     
     case easy = "Easy", medium = "Medium", hard = "Hard"
 }

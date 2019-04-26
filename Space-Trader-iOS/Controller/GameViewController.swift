@@ -11,17 +11,22 @@ import UIKit
 class GameViewController: UIViewController {
 
     var player: Player?
-    let universe = Universe.shared()
+    private var universe = Universe.shared()
     
     @IBOutlet weak var planetLabel: UILabel!
     @IBOutlet weak var playerData: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if UserDefaults.standard.object(forKey: "player") != nil {
+            loadState()
+        } else {
+            let system = Universe.solarSystems.randomElement()
+            player?.system = system
+            player?.location = system?.planets.randomElement()
+        }
+        
         self.navigationController?.delegate = self
-        let system = Universe.solarSystems.randomElement()
-        player?.system = system
-        player?.location = system?.planets.randomElement()
         planetLabel.text = player?.location?.name ?? "Initial"
         planetLabel.textColor = .white
         planetLabel.font = UIFont.preferredFont(forTextStyle: .largeTitle).withSize(36)
@@ -31,6 +36,7 @@ class GameViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = true
+        saveState()
         setDetailLabel()
     }
     
@@ -63,6 +69,32 @@ class GameViewController: UIViewController {
             
         }
     }
+    
+    // MARK: - Persistence
+    func saveState() {
+        let defaults = UserDefaults.standard
+        let encoder = JSONEncoder()
+        let player = try? encoder.encode(self.player)
+        let universe = try? encoder.encode(self.universe)
+        defaults.set(player, forKey: "player")
+        defaults.set(universe, forKey: "universe")
+    }
+    
+    func loadState() {
+        let defaults = UserDefaults.standard
+        let decoder = JSONDecoder()
+        self.player = try? decoder.decode(Player.self, from: (defaults.object(forKey: "player") as? Data)!)
+        self.universe = try! decoder.decode(Universe.self, from: (defaults.object(forKey: "universe") as? Data)!)
+    }
+    
+    /*
+    override func encodeRestorableState(with coder: NSCoder) {
+        <#code#>
+    }
+    
+    override func decodeRestorableState(with coder: NSCoder) {
+        <#code#>
+    } */
 
 }
 
