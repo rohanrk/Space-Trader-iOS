@@ -17,7 +17,7 @@ class BuyViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // buyGoods.dataSource = self
+        buyGoods.dataSource = self
         // buyGoods.delegate = self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -30,12 +30,6 @@ class BuyViewController: UITableViewController {
         self.buyGoods.reloadData()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        let parent = self.tabBarController as? MarketViewController
-        parent?.player = self.player
-        parent?.market = self.market
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

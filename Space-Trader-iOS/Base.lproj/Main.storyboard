@@ -185,7 +185,7 @@
         <!--Game View Controller-->
         <scene sceneID="X1r-q5-6WK">
             <objects>
-                <viewController id="pKu-mh-hiC" customClass="GameViewController" customModule="Space_Trader_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameViewController" id="pKu-mh-hiC" customClass="GameViewController" customModule="Space_Trader_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PML-c7-c6B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -456,7 +456,7 @@
         <!--Navigation Controller-->
         <scene sceneID="eSi-Sn-nb4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tby-kh-Z7h" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationVC" automaticallyAdjustsScrollViewInsets="NO" id="Tby-kh-Z7h" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ma4-vq-gOa">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

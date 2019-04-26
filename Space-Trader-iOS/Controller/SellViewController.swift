@@ -19,9 +19,8 @@ class SellViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.goods = player?.ship.inventory
-        configurePrices()
-        self.sellGoods.reloadData()
-        //sellGoods.dataSource = self
+        setInstanceVariable()
+        sellGoods.dataSource = self
         //sellGoods.delegate = self
 
         // Uncomment the following line to preserve selection between presentations
@@ -33,10 +32,9 @@ class SellViewController: UITableViewController {
         
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        let parent = self.tabBarController as? MarketViewController
-        parent?.player = self.player
-        parent?.market = self.market
+    override func viewWillAppear(_ animated: Bool) {
+        setInstanceVariable()
+        self.sellGoods.reloadData()
     }
 
     // MARK: - Table view data source
@@ -64,7 +62,8 @@ class SellViewController: UITableViewController {
         return cell
     }
     
-    private func configurePrices() {
+    private func setInstanceVariable() {
+        self.goods = player?.ship.inventory
         for (name, good) in market!.goods {
             self.goods![name]?.price = good.price
         }
@@ -129,6 +128,7 @@ extension SellViewController: MarketCellDelegate {
             return false
         } else {
             self.player?.credits += item!.price
+            self.goods![good]?.amount -= 1
             self.player!.ship.inventory[good]?.amount -= 1
             self.market!.goods[good]?.amount += 1
             return true

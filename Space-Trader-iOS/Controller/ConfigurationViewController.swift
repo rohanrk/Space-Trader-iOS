@@ -46,6 +46,13 @@ class ConfigurationViewController: UIViewController, UIPickerViewDelegate {
         difficulty.dataSource = difficulty
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.object(forKey: "player") != nil {
+            let next = (self.storyboard?.instantiateViewController(withIdentifier: "NavigationVC"))!
+            self.present(next, animated: false, completion: nil)
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
